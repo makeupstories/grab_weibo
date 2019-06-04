@@ -48,7 +48,7 @@ def save_to_mongo(result):
         print('Save to Mongo!')
 
 if __name__ == '__main__':
-    for page in range(1):
+    for page in range(1,11):
         json = get_page(page)
         results = parse_page(json)
         for result in results:
